@@ -1,0 +1,73 @@
+body{
+    background-color: bisque; 
+    font-family: sans-serif;
+    /*lo pega al borde*/
+    margin: 0;
+}
+header{
+    /*posicion fija*/
+    position: fixed;
+    background-color: #cccccc;
+    /*posicion del margen*/
+    top: 0;
+    left: 0;
+    /*ancho*/
+    width: 100%;
+    /*alto*/
+    height: 100px;
+    
+}
+
+aside {
+    position: fixed;
+    background-color: #66ffcc;
+    top: 100px;
+    left: 0;
+    /*bottom establece la posición vertical de un elemento posicionado.*/
+    bottom: 20px;
+    width: 20%;
+    /*padding es para dar espacio a los textos */
+    padding: 10px;
+    
+    
+}
+section {
+    /*es para poder correr la pagina hacia abajo*/
+    overflow-y: scroll;
+    position: fixed;
+    background-color: #009999;
+    top: 100px;
+    left: 20%;
+    bottom: 20px;
+    width: 80%;   
+    padding: 10px;
+}
+footer {
+    position: fixed;
+    background-color: black;
+    color: white;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;     
+    height: 20px;
+}
+
+nav a {
+    /*Quita el subrayado que viene por default*/
+    text-decoration: none;
+    color: #ffff33;
+    /*tamaño de letra*/
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    
+    
+}
+/*Eso es como para ponerse encima de la etiqueta*/
+nav a:hover{
+    background-color: #000000;
+    font-size: 18px;
+    animation-delay: 2s;
+}
+

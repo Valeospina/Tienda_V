@@ -3,16 +3,60 @@
 <html>
     <head>
         <title>TechShop</title>
-        <meta charset="UTF-8"/>     
+        <meta charset="UTF-8"/> 
+       <!-- Cargamos la hoja de estilos para poder utilizarla desde css -->
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
-    
+
     <body>
-        <a href="ejemplo7.html">&triangleleft;</a>|
-        <a href="index.html">Home</a>|
-        <a href="ejemplo2.html">&triangleright;</a>
-        <hr>
-        <h1 style="text-align: center;background-color: blue; color: yellow">Home</h1>
-        <h2>pagina principal</h2>
+        <header>
+            <h2>TechShop</h2>
+            <nav>
+                <a href="ejemplo7.html">&triangleleft;</a>|
+                <a href="index.html">Home</a>|
+                <a href="ejemplo2.html">&triangleright;</a>
+            </nav>
+          
+        </header>
+        
+        <aside>
+            <h1>Home</h1> 
+            <p>pagina principal del sistema</p>
+        </aside>
+        
+        <section>
+            
+            <h2>Nuestros Productos</h2>
+            
+            <!-- El article es para dividir en secciones mas "pequeñas", tambien es para-->
+            <article> 
+                <h3>El produdcto del mes</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis dui velit sapien nunc, metus vivamus ligula habitasse suscipit viverra parturient tincidunt curabitur massa. Consequat suspendisse tortor primis interdum cursus erat </p>
+                
+                <!-- Figure es para  almacenar imagenes -->
+                <figure>
+                    <img src="img/marmota.jpg" alt="" height="200"/>
+                    <figcaption>Marmota mirando al mar</figcaption>
+                </figure>
+                
+            </article> 
+            
+            <article> 
+                <h3>La tendencia de la semana</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis dui velit sapien nunc, metus vivamus ligula habitasse suscipit viverra parturient tincidunt curabitur massa. Consequat suspendisse tortor primis interdum cursus erat </p>
+                
+            </article>  
+            
+            <article> 
+                <h3>El mejor rendimiento</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis dui velit sapien nunc, metus vivamus ligula habitasse suscipit viverra parturient tincidunt curabitur massa. Consequat suspendisse tortor primis interdum cursus erat </p>
+                
+            </article>  
+      </section>
+
+        <footer>
+            TechShop Derechos Reservados 2024 &COPY;
+        </footer>
        
   </body>
 </html>
