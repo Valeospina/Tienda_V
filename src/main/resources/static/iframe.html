@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--Esta es la primera pagina html-->
+<html>
+    <head>
+        <title>TechShop</title>
+        <meta charset="UTF-8"/> 
+       <!-- Cargamos la hoja de estilos para poder utilizarla desde css -->
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <header class="encabezado">
+            
+            <nav class="nav">
+                <a class="nav-link logo" href="index.html">TechShop</a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="ejemplo7.html">&triangleleft;</a> </li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="ejemplo2.html">&triangleright;</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="audio.html">Audio</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="video.html">Video</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="iframe.html">Iframe</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="formulario.html">Formularios</a></li>
+                </ul>
+
+
+            </nav>
+          
+        </header>
+        
+        <aside>
+            <h1>Iframe</h1> 
+            <h2>Uso de iframes en html</h2>
+        </aside>
+        
+        <section>
+            
+            <h2>Ejemplos de iframes</h2>
+            <article> 
+                <h3>Sitio empotrado</h3>
+               <!-- Esto es para copiar una pagina web y empotrarla -->
+                <iframe width="1100"
+                        src="https://ufidelitas.ac.cr/"
+                        height="400">
+                    
+                </iframe>
+          
+            </article> 
+            <article> 
+                <h3>Un video de youtube empotrado</h3>
+                <!-- le damos a la opcion de copiar inserccion en youtube y pegamos -->
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/hAOCpGoTLXY" title="🤔 ¿Quién robo pan? 🕺 Pocoyó 🇪🇸 Español - Canal Oficial | Canciones para niños" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+            </article>   
+            <article> 
+                <h3>Un mapa de google maps empotrado</h3>
+                <!--Quitar el loaging lazy de la direccion -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.3776799522925!2d-84.02942842520656!3d9.985627890119057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e54469c695db%3A0xb3e73c81bf090e03!2sSoda%20Donde%20Ma%20CR!5e0!3m2!1ses-419!2scr!4v1717635595579!5m2!1ses-419!2scr" width="600" height="450" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </article>              
+            
+            
+      </section>
+
+        <footer>
+            TechShop Derechos Reservados 2024 &COPY;
+        </footer>
+       
+  </body>
+</html>

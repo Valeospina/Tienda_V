@@ -4,10 +4,10 @@ body{
     /*lo pega al borde*/
     margin: 0;
 }
-header{
+.encabezado{
     /*posicion fija*/
     position: fixed;
-    background-color: #cccccc;
+    background-color: #ccffff;
     /*posicion del margen*/
     top: 0;
     left: 0;
@@ -17,7 +17,33 @@ header{
     height: 100px;
     
 }
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 
+.nav-link{
+    color: black;
+    text-decoration: none;
+    
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 100px;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 100px;
+}
 aside {
     position: fixed;
     background-color: #66ffcc;
@@ -31,6 +57,7 @@ aside {
     
     
 }
+
 section {
     /*es para poder correr la pagina hacia abajo*/
     overflow-y: scroll;
@@ -53,21 +80,18 @@ footer {
     height: 20px;
 }
 
-nav a {
+.nav-menu-link {
     /*Quita el subrayado que viene por default*/
     text-decoration: none;
-    color: #ffff33;
-    /*tamaño de letra*/
-    font-size: 16px;
+    color: #0000cc;
     padding: 5px;
     border-radius: 5px;
     
     
 }
 /*Eso es como para ponerse encima de la etiqueta*/
-nav a:hover{
+.nav-menu-link:hover{
     background-color: #000000;
-    font-size: 18px;
-    animation-delay: 2s;
+    transition:0.5s;
 }
 

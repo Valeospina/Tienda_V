@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--Esta es la primera pagina html-->
+<html>
+    <head>
+        <title>TechShop</title>
+        <meta charset="UTF-8"/> 
+       <!-- Cargamos la hoja de estilos para poder utilizarla desde css -->
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <header class="encabezado">
+            
+            <nav class="nav">
+                <a class="nav-link logo" href="index.html">TechShop</a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="ejemplo7.html">&triangleleft;</a> </li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="ejemplo2.html">&triangleright;</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="audio.html">Audio</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="video.html">Video</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="iframe.html">Iframe</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="formulario.html">Formularios</a></li>
+                </ul>
+
+
+            </nav>
+          
+        </header>
+        
+        <aside>
+            <h1>Formularios</h1> 
+            <h2>Uso de forms en html</h2>
+        </aside>
+        
+        <section>
+            
+            <h2>Bienes Raices El Pueblo</h2>
+            
+           
+            <article> 
+                <h3>Ingrese los datos de su propiedad</h3>
+                <!-- le doy en windows, algo de ide y arrastro el form, solo le di nombre
+                el mehod: post (es para que la informacion non sea visible en el url)-->
+                <form method= "post" action="propiedad/incluir">
+                    <!-- Arratro la etiqueta text input -->
+                    Correo electronico: <input type="email" 
+                                               name="correo" 
+                                               value=""
+                                               size="45" /><br/><!-- Con eso se agrega el enter -->
+                                               
+                    Contraseña:  <input type="password" 
+                                        name="clave" 
+                                        value="" 
+                                        size="10" /> <br/>
+                    
+                    Provincia <select name="provincia">
+                        <!-- Arrastro drop down list -->
+                        <option>San Jose</option>
+                        <option>Alajuela</option>
+                        <option>Cartago</option>
+                        <option>Heredia</option>
+                        <option>Guancaste</option>
+                        <option>Puntarenas</option>
+                        <option>Limon</option>
+                    </select> <br/>
+                    <!-- Arrastro multi line put -->
+                    Direccion exacta: <textarea name="direccion" 
+                                                rows="6"
+                                                cols="60"> 
+                    </textarea><br/>
+                    Monton base: <input type="number" 
+                                        name="monto" 
+                                        value="3000000" /> <br/>
+                    
+                    <input type="submit" value="Enviar" />
+                    
+                </form>
+          
+            </article> 
+            
+      </section>
+
+        <footer>
+            TechShop Derechos Reservados 2024 &COPY;
+        </footer>
+       
+  </body>
+</html>
